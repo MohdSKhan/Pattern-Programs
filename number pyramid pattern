@@ -1,0 +1,38 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+#define lli long long int
+#define ulli unsigned long long int
+#define MOD 1000000007
+
+int main()
+{
+            
+                int n;
+                cin>>n;
+
+                for(int row=1;row<=n;row++){
+                    for(int sp=1;sp<=n-row;sp++){
+                        cout<<" ";
+                    }
+
+                    int cnt=row;
+                    for(int col=1;col<=2*row-1;col++){
+                        cout<<cnt;
+                        if(col<row){
+                            cnt++;
+                        }
+                        else{
+                            cnt--;
+                        }
+                    }
+                    cout<<endl;
+                }
+                
+                
+            
+
+}
+
+
+
