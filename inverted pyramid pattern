@@ -1,0 +1,44 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+#define lli long long int
+#define ulli unsigned long long int
+#define MOD 1000000007
+
+int main()
+{
+        
+                int n;
+                cin>>n;
+                int stars= 2*n-1;
+                for(int row=1;row<=n;row++){
+                    //spaces
+                    for(int sp=1;sp<=row-1;sp++){
+                        cout<<" ";
+                    }
+
+                    //stars
+                    for(int col=1;col<=stars;col++){
+                        cout<<"*";
+                    }
+                    stars -= 2;
+                    cout<<endl;
+                }
+
+                // for(int row=n;row>=1;row--){
+                //     //spaces
+                //     for(int sp=1;sp<=n-row;sp++){
+                //         cout<<" ";
+                //     }
+
+                //     //stars
+                //     for(int col=1;col<=2*row-1;col++){
+                //         cout<<"*";
+                //     }
+                //     cout<<endl;
+                // }
+
+}
+
+
+
