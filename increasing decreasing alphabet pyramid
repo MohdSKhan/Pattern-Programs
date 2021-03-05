@@ -1,0 +1,41 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+#define lli long long int
+#define ulli unsigned long long int
+#define MOD 1000000007
+
+int main()
+{
+        
+                int n;
+                cin>>n;
+                
+                for(int row=1;row<=n;row++){
+                    //spaces
+                    char ch='A';
+                    for(int sp=1;sp<=n-row;sp++){
+                        cout<<" ";
+                    }
+
+                    //inc alphabet
+                    for(int col=1;col<=row;col++){
+                        cout<<ch;
+                        ch++;
+                    }
+
+                    //dec alphabet
+                    ch-=2;
+                    for(int col=1;col<=row-1;col++){
+                        cout<<ch;
+                        ch--;
+                    }
+                    
+                    cout<<endl;
+                }
+
+
+}
+
+
+
