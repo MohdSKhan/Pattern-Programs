@@ -1,0 +1,32 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+#define lli long long int
+#define ulli unsigned long long int
+#define MOD 1000000007
+
+int main()
+{
+        
+                int n;
+                cin>>n;
+                
+                for(int row=1;row<=n;row++){
+                    char ch= 'A' + row -1;
+                    for(int col=1;col<=row;col++){
+                        cout<<ch;
+                        ch--;
+                    }
+                    
+
+
+                    cout<<endl;
+                }
+
+                    
+
+
+}
+
+
+
