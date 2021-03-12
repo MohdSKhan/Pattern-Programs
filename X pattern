@@ -1,0 +1,82 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+#define lli long long int
+#define ulli unsigned long long int
+#define MOD 1000000007
+int main()
+{
+            
+                int n;
+                cin>>n;
+
+                for(int row=1;row<=(n+1)/2;row++){
+                    //spaces
+                    for(int sp=1;sp<=row-1;sp++){
+                        cout<<" ";
+                    }
+                    cout<<"*";
+                    //spaces
+                    for(int sp=1;sp<=n-2-2*(row-1);sp++){
+                        cout<<" ";
+                    }
+
+                    if(n%2==0){
+                        cout<<"*";
+                    }
+                    else if(row!=(n+1)/2){//n is odd
+                        cout<<"*";
+                    }
+                  
+                    cout<<endl;
+                }
+                
+                int rowstart=  n&1 ? (n-1)/2 : n/2;
+                
+                for(int row= rowstart;row>=1;row--){
+                    //spaces
+                    for(int sp=1;sp<=row-1;sp++){
+                        cout<<" ";
+                    }
+                    cout<<"*";
+                    //spaces
+                    for(int sp=1;sp<=n-2-2*(row-1);sp++){
+                        cout<<" ";
+                    }
+
+                    if(n%2==0){
+                        cout<<"*";
+                    }
+                    else if(row!=(n+1)/2){//n is odd
+                        cout<<"*";
+                    }
+                  
+                    cout<<endl;
+                }
+
+
+                // for(int row=1;row<=n;row++){
+                //     for(int col=1;col<=n;col++){
+                //         if(col==row or col==n+1-row){
+                //             cout<<"*";
+                //         }
+                //         else{
+                //             cout<<" ";
+                //         }
+                //     }
+                  
+                //     cout<<endl;
+                // }
+
+
+
+
+
+
+                
+
+                
+}
+
+
+
