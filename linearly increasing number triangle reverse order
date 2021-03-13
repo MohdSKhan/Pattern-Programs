@@ -1,0 +1,47 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+#define lli long long int
+#define ulli unsigned long long int
+#define MOD 1000000007
+int main()
+{
+            
+                int n;
+                cin>>n;
+                int sum=0, rowstart,  k;
+                for(int row=1;row<=n;row++){
+                    if(row==1){
+                        rowstart=1;
+                    }
+                    else{
+                        k= n+1-row;
+                        sum += k;
+                        rowstart= row+sum;
+
+                    }
+                    for(int col=1;col<=row;col++){
+                        cout<<rowstart<<" ";
+                        rowstart -= k;
+                        k++;
+                    }
+                   
+                    cout<<endl;
+                }
+                
+                
+
+                
+
+
+
+
+
+
+                
+
+                
+}
+
+
+
